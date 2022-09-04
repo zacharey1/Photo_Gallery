@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  height: 100vh;
+}
+
+.searchwrap {
+  display: flex;
+  width: 350px;
+  margin: 30px auto 0;
+}
+
+.searchbar {
+  border: 1px solid gray;
+  height: 40px;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.searchbar:hover,
+.searchbar:active {
+  border: 2px solid rgb(90, 91, 92);
+  background: ghostwhite;
+}
+
+.gallery {
+  max-width: 900px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(100px, 1fr));
+  grid-template-rows: repeat(3, minmax(100px, 1fr));
+  grid-gap: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */
