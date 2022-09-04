@@ -38,3 +38,10 @@ body {
   grid-gap: 20px;
 }
 
+img {
+  transition: .5s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}

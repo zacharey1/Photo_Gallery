@@ -3,6 +3,7 @@
     <head>
         <title>Photo Gallery</title>
         <link rel="stylesheet" href="css/style.css">
+        <link rel="javascript" href="js/app.js">
         <link rel="stylesheet" href="css/baguetteBox.min.css">
     </head>
     <body>
@@ -72,5 +73,10 @@
             </div>
         </div>
         <script src="js/baguetteBox.min.js" async></script>
+        <script>
+            window.addEventListener('load', function() {
+              baguetteBox.run('.gallery');
+            });
+        </script>
     </body>
 </html>

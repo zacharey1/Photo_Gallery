@@ -1,1 +1,6 @@
-baguetteBox.run('.gallery');
+baguetteBox.run('.gallery', {
+    // Custom options
+    captions,
+    buttons,
+    fullScreen,
+});
