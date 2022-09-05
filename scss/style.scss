@@ -9,22 +9,19 @@ body {
   height: 100vh;
 }
 
-.searchwrap {
-  display: flex;
-  width: 350px;
-  margin: 30px auto 0;
-}
 
-.searchbar {
+#searchbar {
     border: 1px solid gray;
+    display: flex;
     height: 40px;
     width: 100%;
+    max-width: 350px;
     padding: 0 10px;
-
+    margin: 30px auto 0;
 }
 
-.searchbar:hover,
-.searchbar:active {
+#searchbar:hover,
+#searchbar:active {
     border: 2px solid rgb(90, 91, 92);
     background: ghostwhite;
 }
@@ -40,6 +37,8 @@ body {
 
 img {
   transition: .5s;
+  border: 2px solid rgba(223, 216, 216, 0.433);
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
 }
 
 .gallery img:hover {
