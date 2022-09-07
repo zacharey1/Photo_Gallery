@@ -1,1 +1,3 @@
-baguetteBox.run('.interactivegallery');
+window.addEventListener('load', function() {
+    baguetteBox.run('.gallery');
+  });
