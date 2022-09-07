@@ -8,7 +8,7 @@
     </head>
     <body>
         <div class="interactivegallery">
-            <input id="searchbar" type="text" onkeyup="search_photo()" placeholder="Search">
+            <input id="searchbar" type="text" onkeyup="getInput()" placeholder="Search">
             <div class="gallery">
                 <div class="photo">
                     <a id="picture" href="photos/01.jpg" data-caption="I love hay bales. Took this snap on a drive through the countryside past some straw fields.">
@@ -78,6 +78,14 @@
               baguetteBox.run('.gallery');
             });
         </script>
-        
+        <script>
+            document.getElementById("searchbar").addEventListener("keyup", getInput);
+            
+            function getInput() {
+              var x = document.getElementById("searchbar");
+              x.value = x.value.toLowerCase();
+              return x;
+            }
+            </script>
     </body>
 </html>
