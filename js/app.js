@@ -2,10 +2,20 @@ window.addEventListener('load', function() {
     baguetteBox.run('.gallery');
   });
 
-  document.getElementById("searchbar").addEventListener("keyup", getInput);
-            
-            function getInput() {
-              var x = document.getElementById("searchbar");
-              x.value = x.value.toLowerCase();
-              return x;
-            }
+const input = document.getElementById("searchbar");
+const pictures = document.querySelectorAll(".photo a");
+
+input.addEventListener("keyup", function (event) {
+  for (let i = 0; i < pictures.length; i++) {
+    if (
+      pictures[i]
+      .getAttribute("data-caption")
+      .toLowerCase()
+      .includes(input.value.toLowerCase())
+    ) {
+      pictures[i].parentElement.style.display = "";
+    } else {
+      pictures[i].parentElement.style.display = "none";
+    }
+  }
+});
